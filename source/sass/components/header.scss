@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  padding-top: 57px;
+  margin-bottom: 20px;
+  z-index: 1;
+
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 1504px;
+  //  background: url("../img/promo-bg.jpg") no-repeat;
+  //  background-size: 100% auto;
+  //  z-index: -1;
+  //}
+}
+
+.header__container {
+  max-width: 1190px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+}

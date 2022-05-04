@@ -48,3 +48,30 @@ select {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button-request-chatbot {
+  position: relative;
+  padding: 30px 50px 33px 51px;
+  background: $buttonBlueGradient;
+  color: $white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136.7%;
+  text-decoration: none;
+  display: block;
+  box-shadow: inset 0 0 26px rgba(255, 255, 255, 0.46), 0 6px 0 0 #1332ab;
+  border-radius: 10px;
+}
+.button-request-whatsapp {
+  position: relative;
+  padding: 30px 39px 33px 39px;
+  background: $buttonGreenGradient;
+  color: $white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136.7%;
+  text-decoration: none;
+  display: block;
+  box-shadow: inset 0 0 26px rgba(255, 255, 255, 0.46), 0 6px 0 0 #25a539;
+  border-radius: 10px;
+}

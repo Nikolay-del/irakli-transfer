@@ -1,0 +1,86 @@
+.promo {
+  position: relative;
+  z-index: 1;
+}
+
+.promo__container {
+  max-width: 1230px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.promo__heading {
+  width: 92%;
+  margin: 0 auto 20px auto;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.promo__list {
+  margin: 0 0 61px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(1) {
+    width: 8%;
+    gap: 10px;
+  }
+
+  &:nth-child(2) {
+    width: 19%;
+    gap: 7px;
+  }
+
+  &:nth-child(3) {
+    width: 16%;
+    gap: 14px;
+  }
+
+  &:nth-child(4) {
+    width: 19%;
+    gap: 7px;
+  }
+
+  &:nth-child(5) {
+    width: 18%;
+    gap: 9px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: $gray;
+  }
+}
+
+.promo__mercedes {
+  position: absolute;
+  top: 223px;
+  right: -55px;
+}
+
+.promo__bushes-left{
+  position: absolute;
+  left: 0px;
+  bottom: -190px;
+}

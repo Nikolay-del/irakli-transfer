@@ -1,0 +1,53 @@
+.request {
+  background: $white;
+  width: 36%;
+  padding: 57px 40px 16px 40px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -39px;
+    left: -51px;
+    width: 127px;
+    height: 139px;
+    background: url("../img/coat-arms-sochi.png") no-repeat;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -64px;
+    right: -56px;
+    width: 200px;
+    height: 176px;
+    background: url("../img/request-flag-abkhazia.png") no-repeat;
+  }
+
+}
+
+.request__text {
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  width: 87%;
+  margin: 0 auto 20px auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 10px;
+    background: url("../img/decor-request.svg") no-repeat;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.request__button {
+  margin-bottom: 18px;
+}

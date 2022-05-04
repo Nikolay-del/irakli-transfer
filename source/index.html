@@ -5,6 +5,7 @@
   <meta name="description" content="Ираклий Трансфер. Ежедневный рейсовый трансфер Абхазия – Сочи">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Ираклий Трансфер</title>
 </head>
 <body>
@@ -12,86 +13,137 @@
   <div class="header__container">
     <p class="header__text">В одну сторону 800 рублей</p>
     <a class="logo">
-      Логотип 'Ираклий Трансфер'
+      <picture>
+        <img src="img/logo.svg" alt="Логотип 'Ираклий Трансфер'" width="545" height="42">
+      </picture>
     </a>
     <p class="header__text">В обе стороны 1000 рублей</p>
   </div>
 </header>
 <main class="main">
   <section class="promo">
-    <h1 class="promo__heading">Ежедневный рейсовый трансфер Абхазия – Сочи по цене
-      поездки своим ходом с комфортом, как в такси и даже лучше</h1>
-    <ul class="promo__list">
-      <li class="promo__item">
-        <p>Выезжаем ежедневно</p>
-      </li>
-      <li class="promo__item">
-        <p>Чистый салон, исправный кондиционер и вай–фай на всём пути следования</p>
-      </li>
-      <li class="promo__item">
-        <p>Забираем и развозим в Сухуме до подъезда</p>
-      </li>
-      <li class="promo__item">
-        <p>Высокий сервис и доброжелательные водители–профессионалы</p>
-      </li>
-      <li class="promo__item">
-        <p>Провожаем и встречаем на вокзале и в аэропорту Адлера</p>
-      </li>
-    </ul>
-    <div class="promo__request request">
-      <p class="request__text">
-        Оставьте заявку удобным способом и уже завтра мы заберём вас в удобном месте
-      </p>
-      <a href="https://t.me/iraklitransferbot" class="request__button button-request-chatbot">Оставить заявку в
-        чат-боте</a>
-      <a href="https://api.whatsapp.com/send/?phone=79407760606" class="request__button button-request-whatsapp">Оставить
-        заявку в WhatsApp</a>
+    <div class="promo__container">
+      <h1 class="promo__heading">Ежедневный рейсовый трансфер Абхазия – Сочи по цене
+        поездки своим ходом с комфортом, как в такси и даже лучше</h1>
+      <ul class="promo__list">
+        <li class="promo__item">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <use xlink:href="img/sprite.svg#time"/>
+          </svg>
+          <p>Выезжаем ежедневно</p>
+        </li>
+        <li class="promo__item">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <use xlink:href="img/sprite.svg#star"/>
+          </svg>
+          <p>Чистый салон, исправный кондиционер и вай–фай на всём пути следования</p>
+        </li>
+        <li class="promo__item">
+          <svg width="24" height="9" viewBox="0 0 24 9" fill="none">
+            <use xlink:href="img/sprite.svg#arrows"/>
+          </svg>
+          <p>Забираем и развозим в Сухуме до подъезда</p>
+        </li>
+        <li class="promo__item">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <use xlink:href="img/sprite.svg#smile"/>
+          </svg>
+          <p>Высокий сервис и доброжелательные водители–профессионалы</p>
+        </li>
+        <li class="promo__item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <use xlink:href="img/sprite.svg#pointer"/>
+          </svg>
+          <p>Провожаем и встречаем на вокзале и в аэропорту Адлера</p>
+        </li>
+      </ul>
+      <div class="promo__request request">
+        <p class="request__text">
+          Оставьте заявку удобным способом и уже завтра мы заберём вас в удобном месте
+        </p>
+        <a href="https://t.me/iraklitransferbot"
+           class="request__button button-request-chatbot button-request-chatbot">Оставить заявку в
+          чат-боте</a>
+        <a href="https://api.whatsapp.com/send/?phone=79407760606"
+           class="request__button button-request-whatsapp button-request-whatsapp">Оставить
+          заявку в WhatsApp</a>
+      </div>
+      <picture>
+        <img src="img/mercedes.png" alt="Mercedes Sprinter" class="promo__mercedes" width="833" height="657"
+             aria-hidden="true">
+      </picture>
     </div>
+    <!--     <img src="img/bushes-left.png" alt="Кусты" width="238" height="574" aria-hidden="true" -->
+    <!--          class="promo__bushes-left"> -->
   </section>
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
     <div class="advantages__container">
       <ul class="advantages__list">
         <li class="advantages__item">
-          12 лет
+          <div class="advantages__img-wrapper">
+            <picture>
+              <img src="img/12-years.png" alt="12 лет" width="180" height="206">
+            </picture>
+          </div>
           <p class="advantages__desc">Ежедневных выездов по маршруту</p>
         </li>
         <li class="advantages__item">
-          Палец вверх
-          <p class="advantages__desc">Перевезли более 175 000 человек</p>
+          <div class="advantages__img-wrapper">
+            <picture>
+              <img src="img/like.png" alt="Палец вверх" width="226" height="222">
+            </picture>
+          </div>
+          <p class="advantages__desc">Перевезли более 175&nbsp;000 человек</p>
         </li>
         <li class="advantages__item">
-          Магнит
+          <div class="advantages__img-wrapper">
+            <picture>
+              <img src="img/magnit.png" alt="Магнит" width="173" height="140">
+            </picture>
+          </div>
           <p class="advantages__desc">Около 90% пассажиров стали постоянными клиентами</p>
         </li>
         <li class="advantages__item">
-          Mercedes Sprinter
-          <p class="advantages__desc">Комфортабельные 20–местные автобусы Mercedes Sprinter</p>
+          <div class="advantages__img-wrapper">
+            <picture>
+              <img src="img/20-mest.png" alt="Mercedes Sprinter" width="193" height="244">
+            </picture>
+          </div>
+          <p class="advantages__desc">Комфортабельные <br> 20–местные автобусы Mercedes Sprinter</p>
         </li>
       </ul>
     </div>
   </section>
   <section class="get-there">
-    <div class="get-there__container">
-      <div class="get-there__differently differently">
+    <div class="get-there__differently differently">
+      <div class="differently__container">
         <h2 class="differently__heading">Как доехать из Сочи в Абхазию?</h2>
         <p class="differently__desc">Можно добраться своим ходом или заказать такси</p>
         <p class="differently__choice">Приходится выбирать:</p>
-        <div class="differently__item differently__item--long">
-          <h3 class="differently__name">Дёшево и долго</h3>
-          <p class="differently__text">трястись с пересадками, долго и неудобно, тащить на себе багаж через "пешеходку"
-            и
-            постоянно следить за детьми, если путешествуете семьёй</p>
+        <div class="differently__wrapper">
+          <div class="differently__item differently__item--long">
+            <h3 class="differently__name">Дёшево и долго</h3>
+            <p class="differently__text">трястись с пересадками, долго и неудобно, тащить на себе багаж через
+              "пешеходку" и
+              постоянно следить за детьми, если путешествуете семьёй</p>
+          </div>
+          <div class="differently__item differently__item--fast">
+            <h3 class="differently__name">Быстро, но дорого</h3>
+            <p class="differently__text">либо нанять незнакомого таксиста и выложить круглую сумму, которая часто
+              зависит
+              от "аппетита" водителя</p>
+          </div>
+          <div class="differently__or">
+            <img src="img/or.svg" alt="Или" aria-hidden="true" draggable="false" width="177" height="187">
+          </div>
         </div>
-        <div class="differently__item differently__item--fast">
-          <h3 class="differently__name">Быстро, но дорого</h3>
-          <p class="differently__text">либо нанять незнакомого таксиста и выложить круглую сумму, которая часто зависит
-            от "аппетита" водителя</p>
-        </div>
-        <span class="differently__or">или</span>
       </div>
-      <div class="get-there__to-us to-us">
+    </div>
+    <div class="get-there__to-us to-us">
+      <div class="to-us__container">
         <h3 class="to-us__heading">А можно обратиться к нам</h3>
+        <p class="to-us__desc">Ведь мы осуществляем трансфер дешёво, быстро и с комфортом</p>
         <ul class="to-us__list">
           <li class="to-us__item">
             <div class="to-us__number">1</div>
@@ -137,64 +189,64 @@
             Водитель
           </li>
         </ul>
-        <div>Указатель вниз</div>
-        <h3 class="to-us__heading to-us__heading--as-well-as">А так же</h3>
-        <ul class="to-us__list">
-          <li class="to-us__item">
-            <div class="to-us__number">5</div>
-            <div class="to-us__text">
-              <h4 class="to-us__subheading">Удобный маршрут и время</h4>
-              <div class="to-us__paragraphs">
-                <p class="to-us__paragraph">С нами вы успеете улететь, прилететь, сделать дела, посетить врача,
-                  пройтись по магазинам или отвести детей в парк развлечений и вернуться домой к ужину. И всё это за
-                  один день.</p>
-                <p class="to-us__paragraph">По пути в Сочи оставляем пассажиров в центре Адлера и Сочи, в больничном
-                  городке и к 9 утра приезжаем на
-                  конечную к ТЦ "Моремолл".</p>
-                <p class="to-us__paragraph">Из Сочи отправляемся в 16.30 и в 14.00. Едем через центр Адлера, жд
-                  вокзал и аэропорт.</p>
-              </div>
-            </div>
-            Красивое место
-          </li>
-          <li class="to-us__item">
-            <div class="to-us__number">6</div>
-            <div class="to-us__text">
-              <h4 class="to-us__subheading">Едем без пересадок, если не считать пешее прохождение паспортного
-                контроля на границе</h4>
-              <p class="to-us__paragraph">А ещё мы знаем секреты, как быстрее пересечь границу и часто приезжаем в Сухум
-                быстрее, чем такси</p>
-            </div>
-            Дорога вдоль гор
-          </li>
-          <li class="to-us__item">
-            <div class="to-us__number">7</div>
-            <div class="to-us__text">
-              <h4 class="to-us__subheading">Мы вас проводим и встретим</h4>
-              <p class="to-us__paragraph">Наш маршрут рассчитан так, что мы успеем вас доставить на вокзал/аэропорт к
-                утреннему рейсу или заберём вечером</p>
-            </div>
-            Самолет
-          </li>
-          <li class="to-us__item">
-            <div class="to-us__number">8</div>
-            <div class="to-us__text">
-              <h4 class="to-us__subheading">Экономим ваш бюджет</h4>
-              <div class="to-us__paragraphs">
-                <p class="to-us__paragraph">Мы перевозим пассажиров в 20–местном автобусе. Это позволяет нам держать
-                  низкие цены по сравнению с трансфером на мини–вене или легковом автомобиле, которые могут везти 3-5
-                  человек.</p>
-                <p class="to-us__paragraph">Поэтому мы установили цену 800 рублей в одну сторону, 1000 рублей в обе
-                  стороны.
-                </p>
-                <p class="to-us__paragraph">Это немного дороже, чем ехать своим ходом с пересадками. Зато вы получаете
-                  сервис, сравнимый с поездкой в такси.</p>
-              </div>
-            </div>
-            Открытый кошелек
-          </li>
-        </ul>
       </div>
+      <div>Указатель вниз</div>
+      <h3 class="to-us__heading to-us__heading--as-well-as">А так же</h3>
+      <ul class="to-us__list">
+        <li class="to-us__item">
+          <div class="to-us__number">5</div>
+          <div class="to-us__text">
+            <h4 class="to-us__subheading">Удобный маршрут и время</h4>
+            <div class="to-us__paragraphs">
+              <p class="to-us__paragraph">С нами вы успеете улететь, прилететь, сделать дела, посетить врача,
+                пройтись по магазинам или отвести детей в парк развлечений и вернуться домой к ужину. И всё это за
+                один день.</p>
+              <p class="to-us__paragraph">По пути в Сочи оставляем пассажиров в центре Адлера и Сочи, в больничном
+                городке и к 9 утра приезжаем на
+                конечную к ТЦ "Моремолл".</p>
+              <p class="to-us__paragraph">Из Сочи отправляемся в 16.30 и в 14.00. Едем через центр Адлера, жд
+                вокзал и аэропорт.</p>
+            </div>
+          </div>
+          Красивое место
+        </li>
+        <li class="to-us__item">
+          <div class="to-us__number">6</div>
+          <div class="to-us__text">
+            <h4 class="to-us__subheading">Едем без пересадок, если не считать пешее прохождение паспортного
+              контроля на границе</h4>
+            <p class="to-us__paragraph">А ещё мы знаем секреты, как быстрее пересечь границу и часто приезжаем в Сухум
+              быстрее, чем такси</p>
+          </div>
+          Дорога вдоль гор
+        </li>
+        <li class="to-us__item">
+          <div class="to-us__number">7</div>
+          <div class="to-us__text">
+            <h4 class="to-us__subheading">Мы вас проводим и встретим</h4>
+            <p class="to-us__paragraph">Наш маршрут рассчитан так, что мы успеем вас доставить на вокзал/аэропорт к
+              утреннему рейсу или заберём вечером</p>
+          </div>
+          Самолет
+        </li>
+        <li class="to-us__item">
+          <div class="to-us__number">8</div>
+          <div class="to-us__text">
+            <h4 class="to-us__subheading">Экономим ваш бюджет</h4>
+            <div class="to-us__paragraphs">
+              <p class="to-us__paragraph">Мы перевозим пассажиров в 20–местном автобусе. Это позволяет нам держать
+                низкие цены по сравнению с трансфером на мини–вене или легковом автомобиле, которые могут везти 3-5
+                человек.</p>
+              <p class="to-us__paragraph">Поэтому мы установили цену 800 рублей в одну сторону, 1000 рублей в обе
+                стороны.
+              </p>
+              <p class="to-us__paragraph">Это немного дороже, чем ехать своим ходом с пересадками. Зато вы получаете
+                сервис, сравнимый с поездкой в такси.</p>
+            </div>
+          </div>
+          Открытый кошелек
+        </li>
+      </ul>
     </div>
   </section>
   <section class="timetable">
