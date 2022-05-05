@@ -1,6 +1,6 @@
-.to-us {
-
-}
+//.to-us {
+//
+//}
 
 .to-us__container {
   max-width: 1192px;
@@ -13,8 +13,94 @@
   background: $blackGradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
 }
 
 .to-us__desc {
+  margin: 0 0 50px 0;
+  font-size: 32px;
+  line-height: 130%;
+}
 
+.to-us__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 48px;
+}
+
+.to-us__item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: $grayGradient;
+  border: 4px solid #c4c4c4;
+  border-radius: 15px;
+  flex-direction: row-reverse;
+  overflow: hidden;
+
+  img {
+    margin: -4px 0 -4px -4px;
+    height: 100%;
+    width: auto;
+  }
+
+  &:nth-child(2n) {
+    flex-direction: row;
+
+    .to-us__number {
+      left: auto;
+      right: 4%;
+    }
+  }
+}
+
+.to-us__subheading {
+  margin: 0 0 28px 0;
+  font-size: 32px;
+  line-height: 130%;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 97%;
+}
+
+.to-us__paragraphs {
+  display: grid;
+  gap: 34px;
+}
+
+.to-us__paragraph {
+  margin: 0;
+  font-size: 24px;
+  line-height: 135%;
+  color: $darkGray;
+  width: 100%;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.to-us__text {
+  padding: 54px 56px 0 56px;
+}
+
+.to-us__number {
+  position: absolute;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 196%;
+  color: $white;
+  text-shadow: 0 4px 4px rgba(208, 161, 51, 0.5);
+  z-index: 2;
+  width: 73px;
+  text-align: center;
+  height: 115px;
+  background: url("../img/bookmark.svg") no-repeat;
+  left: 4%;
+  top: -4px;
 }

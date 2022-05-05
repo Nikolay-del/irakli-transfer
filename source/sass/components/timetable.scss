@@ -1,0 +1,138 @@
+.timetable {
+  margin-bottom: 53px;
+}
+
+.timetable__container {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timetable__heading {
+  margin: 0 0 18px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timetable__scheme {
+  display: block;
+  margin: 0 auto 28px auto;
+}
+
+.timetable__table {
+  border: 4px solid #ffcb52;
+  border-radius: 15px;
+  display: grid;
+  grid-template-areas: "a b c" "a b c" "d d d";
+}
+
+.timetable__column {
+  min-height: 565px;
+  padding: 35px 22px 38px 55px;
+  border-right: 4px solid #e6e6e6;
+
+
+  &:nth-child(1) {
+    grid-area: a;
+
+    .timetable__subheading {
+      margin: 0;
+    }
+
+    .timetable__attributes {
+      &::after {
+        right: -48px;
+        background: url("../img/icon-flag-abkhazia.png") no-repeat;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    grid-area: b;
+  }
+
+  &:nth-child(3) {
+    grid-area: c;
+    border: none;
+  }
+}
+
+.timetable__attributes {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    right: -58px;
+    background: url("../img/icon-flag-russia.png") no-repeat;
+  }
+}
+
+.timetable__subheading {
+  margin: 0 14px 0 0;
+  position: relative;
+  display: inline-block;
+
+  span {
+    background: $redGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.timetable__checkout {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  color: #737373;
+  display: inline-block;
+}
+
+.timetable__checkpoints {
+  display: grid;
+  gap: 30px;
+}
+
+.timetable__checkpoint {
+  margin: 0;
+  font-size: 24px;
+  line-height: 135%;
+
+  &-time {
+    font-weight: 700;
+    background: $blueGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.timetable__paragraph {
+  margin: 12px 0 0 0;
+  width: 52%;
+}
+
+.timetable__note {
+  grid-area: d;
+  border-top: 4px solid #e6e6e6;
+  padding: 34px 0 44px 51px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 74px;
+    width: 377px;
+    height: 200px;
+    background: url("../img/time.png") no-repeat;
+  }
+}

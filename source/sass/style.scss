@@ -1,12 +1,13 @@
 @import "../css/normalize.css";
-@import "global/fonts";
-@import "global/variables";
-@import "global/global";
-
-@import "components/header";
-@import "components/promo";
-@import "components/request";
-@import "components/advantages";
-@import "components/get-there";
-@import "components/differently";
-@import "components/to-us";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "components/header.scss";
+@import "components/promo.scss";
+@import "components/request.scss";
+@import "components/advantages.scss";
+@import "components/get-there.scss";
+@import "components/differently.scss";
+@import "components/to-us.scss";
+@import "components/timetable.scss";
+@import "components/pricelist.scss";
