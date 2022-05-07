@@ -1,0 +1,10 @@
+.map {}
+
+.map__container {
+  width: 100%;
+  height: 716px;
+}
+
+[class*="ground-pane"] {
+  transform: rotate(130.5turn);
+}
