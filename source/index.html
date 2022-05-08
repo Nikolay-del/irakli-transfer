@@ -13,6 +13,7 @@
   <div class="header__container">
     <a class="logo">
       <picture>
+        <source media="(min-width: )" srcset="">
         <img src="img/logo.svg" alt="Логотип 'Ираклий Трансфер'" width="545" height="42">
       </picture>
     </a>
@@ -21,8 +22,7 @@
 <main class="main">
   <section class="promo">
     <div class="promo__container">
-      <h1 class="promo__heading">Ежедневный рейсовый трансфер Абхазия – Сочи по цене
-        поездки своим ходом с комфортом, как в такси и даже лучше</h1>
+      <h1 class="promo__heading">Ежедневный трансфер Абхазия – Сочи – Абхазия</h1>
       <p class="promo__desc">Доступно. Комфортно. Без пересадок</p>
       <div class="promo__price">
         <span class="promo__price-desktop">В одну сторону 800 рублей – В обе стороны 1000 рублей</span>
@@ -374,36 +374,40 @@
     <div class="guarantee__container">
       <h2 class="guarantee__heading">Наши гарантии</h2>
       <ul class="guarantee__list">
-        <li class="guarantee__item">
+        <li class="guarantee__item guarantee__item--chairs">
           <picture>
             <source srcset="img/chairs.webp 1x, img/chairs@2x.webp 2x" type="image/webp">
-            <img src="img/chairs.png" alt="Сиденье автомобиля" srcset="img/chairs@2x.png 2x" width="428" height="284">
+            <img src="img/chairs.png" alt="Сиденье автомобиля" srcset="img/chairs@2x.png 2x" width="300" height="245">
           </picture>
           <p class="guarantee__desc">При предварительном заказе за вами будет забронировано место</p>
         </li>
-        <li class="guarantee__item">
-          Перечеркнутый микроавтобус
-          <p class="guarantee__desc">Вы всегда можете отказаться от поездки</p>
-        </li>
-        <li class="guarantee__item">
+        <li class="guarantee__item guarantee__item--refuse">
           <picture>
             <source srcset="img/refuse.webp 1x, img/refuse@2x.webp 2x" type="image/webp">
-            <img src="img/refuse.png" alt="Кошелек" srcset="img/refuse@2x.png 2x" width="247" height="246">
+            <img src="img/refuse.png" alt="Перечеркнутый микроавтобус" srcset="img/refuse@2x.png 2x" width="247"
+                 height="246">
+          </picture>
+          <p class="guarantee__desc">Вы всегда можете отказаться от поездки</p>
+        </li>
+        <li class="guarantee__item guarantee__item--refund">
+          <picture>
+            <source srcset="img/refund.webp 1x, img/refund@2x.webp 2x" type="image/webp">
+            <img src="img/refund.png" alt="Кошелек" srcset="img/refund@2x.png 2x" width="300" height="273">
           </picture>
           <p class="guarantee__desc">Если вам не понравится поездка с нами, мы вернём вам деньги без лишних вопросов</p>
         </li>
-        <li class="guarantee__item">
+        <li class="guarantee__item guarantee__item--cards">
           <picture>
             <source srcset="img/payment-cards.webp 1x, img/payment-cards@2x.webp 2x" type="image/webp">
-            <img src="img/payment-cards.png" alt="Банковские карты" srcset="img/payment-cards@2x.png 2x" width="506"
-                 height="261">
+            <img src="img/payment-cards.png" alt="Банковские карты" srcset="img/payment-cards@2x.png 2x" width="346"
+                 height="249">
           </picture>
           <p class="guarantee__desc">Принимаем оплату удобным для вас способом</p>
         </li>
-        <li class="guarantee__item">
+        <li class="guarantee__item guarantee__item--service">
           <picture>
             <source srcset="img/service.webp 1x, img/service@2x.webp" type="image/webp">
-            <img src="img/service.png" alt="Вай-фай и музыка" srcset="img/service@2x.png 2x" width="442" height="267">
+            <img src="img/service.png" alt="Вай-фай и музыка" srcset="img/service@2x.png 2x" width="350" height="267">
           </picture>
           <p class="guarantee__desc">Вы получите сервис сравнимый с индивидуальными перевозками</p>
         </li>
@@ -428,77 +432,102 @@
     </div>
   </section>
   <section class="faq">
-    <h2 class="faq__heading">Остались вопросы?</h2>
-    <ul class="faq__list">
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Как заказать?</h3>
-          <button name="button" type="button"><span class="visually-hidden">Как заказать?</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid
-            at
-            corporis eaque earum est in inventore, iusto necessitatibus nihil numquam perferendis quo repellendus
-            reprehenderit repudiandae soluta voluptas voluptatum!</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Выезд из Абхазии</h3>
-          <button name="button" type="button"><span class="visually-hidden">Выезд из Абхазии</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur ea eligendi
-            fugiat iure laborum maiores natus nemo nesciunt odit, possimus qui rem repellendus sapiente, similique ut
-            voluptas voluptates voluptatibus.</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Выезд из Сочи</h3>
-          <button name="button" type="button"><span class="visually-hidden">Выезд из Сочи</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eius id incidunt magni quae
-            quasi reprehenderit saepe vel veniam voluptas! Cum dolorum ex explicabo nihil omnis praesentium tempore
-            tenetur unde.</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Пересечение границы</h3>
-          <button name="button" type="button"><span class="visually-hidden">Пересечение границы</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt fuga fugiat,
-            libero molestias nobis quidem quos rerum sit sunt. A amet consequatur illo laudantium necessitatibus nihil,
-            odit optio perspiciatis!</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Для убывающих</h3>
-          <button name="button" type="button"><span class="visually-hidden">Для убывающих</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem delectus dolorem
-            dolorum eligendi, error est hic impedit laboriosam magnam non obcaecati quas qui quibusdam quo rerum soluta
-            temporibus voluptatem.</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Для прибывающих</h3>
-          <button name="button" type="button"><span class="visually-hidden">Для прибывающих</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi
-            consequatur
-            dolores eius, eum fugit harum illum impedit libero, modi molestias nemo odit quisquam sit sunt! Natus
-            quisquam
-            quos sed.</p>
-        </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__container-accordion">
-          <h3>Групповой трансфер</h3>
-          <button name="button" type="button"><span class="visually-hidden">Групповой трансфер</span></button>
-          <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur delectus
-            earum esse ipsa, ipsam laudantium maiores minima nemo, nesciunt nihil non officia possimus quas quidem quod,
-            tempora ut voluptates.</p>
-        </div>
-      </li>
-    </ul>
-    <p class="faq__note">Ответы на большее количество вопросов вы сможете найти в нашем чат-боте</p>
-    <a href="https://t.me/iraklitransferbot" class="faq__button button-request-chatbot">Перейти в чат-бот</a>
+    <div class="faq__container">
+      <h2 class="faq__heading">Остались вопросы?</h2>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Как заказать?</h3>
+              <button name="button" type="button"><span class="visually-hidden">Как заказать?</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci
+              aliquid
+              at
+              corporis eaque earum est in inventore, iusto necessitatibus nihil numquam perferendis quo repellendus
+              reprehenderit repudiandae soluta voluptas voluptatum!</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Выезд из Абхазии</h3>
+              <button name="button" type="button"><span class="visually-hidden">Выезд из Абхазии</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur ea eligendi
+              fugiat iure laborum maiores natus nemo nesciunt odit, possimus qui rem repellendus sapiente, similique ut
+              voluptas voluptates voluptatibus.</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Выезд из Сочи</h3>
+              <button name="button" type="button"><span class="visually-hidden">Выезд из Сочи</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eius id incidunt magni
+              quae
+              quasi reprehenderit saepe vel veniam voluptas! Cum dolorum ex explicabo nihil omnis praesentium tempore
+              tenetur unde.</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Пересечение границы</h3>
+              <button name="button" type="button"><span class="visually-hidden">Пересечение границы</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt fuga
+              fugiat,
+              libero molestias nobis quidem quos rerum sit sunt. A amet consequatur illo laudantium necessitatibus
+              nihil,
+              odit optio perspiciatis!</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Для убывающих</h3>
+              <button name="button" type="button"><span class="visually-hidden">Для убывающих</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem delectus dolorem
+              dolorum eligendi, error est hic impedit laboriosam magnam non obcaecati quas qui quibusdam quo rerum
+              soluta
+              temporibus voluptatem.</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Для прибывающих</h3>
+              <button name="button" type="button"><span class="visually-hidden">Для прибывающих</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi
+              consequatur
+              dolores eius, eum fugit harum illum impedit libero, modi molestias nemo odit quisquam sit sunt! Natus
+              quisquam
+              quos sed.</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__container-accordion">
+            <div class="faq__accordion-top">
+              <h3>Групповой трансфер</h3>
+              <button name="button" type="button"><span class="visually-hidden">Групповой трансфер</span></button>
+            </div>
+            <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur
+              delectus
+              earum esse ipsa, ipsam laudantium maiores minima nemo, nesciunt nihil non officia possimus quas quidem
+              quod,
+              tempora ut voluptates.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="faq__note">Ответы на большее количество вопросов вы сможете найти в нашем чат-боте</p>
+      <div class="faq__button-wrap">
+        <a href="https://t.me/iraklitransferbot" class="faq__button button-request-chatbot">Перейти в чат-бот</a>
+      </div>
+    </div>
   </section>
   <section class="submit">
     <div class="submit__container">

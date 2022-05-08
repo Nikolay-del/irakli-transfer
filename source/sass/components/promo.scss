@@ -11,8 +11,7 @@
 }
 
 .promo__heading {
-  width: 92%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
@@ -20,6 +19,36 @@
   background: $blackGradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.promo__desc {
+  margin: 0 auto 23px auto;
+  font-size: 44px;
+  line-height: 130%;
+  text-align: center;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.promo__price {
+  text-align: center;
+  margin-bottom: 37px;
+
+  &-desktop {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 29px;
+    border-radius: 5px;
+    border: 3px solid #000000;
+  }
+
+  &-mobile {
+    display: none;
+  }
 }
 
 .promo__list {

@@ -1,0 +1,101 @@
+.guarantee {
+
+}
+
+.guarantee__container {
+  max-width: 1187px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.guarantee__heading {
+  margin: 0 0 33px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.guarantee__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 72px;
+}
+
+.guarantee__item {
+
+  img {
+  }
+  &--chairs {
+    padding-top: 14px;
+
+    img {
+      margin-bottom: 13px;
+    }
+
+    .guarantee__desc {
+      width: 331px;
+    }
+  }
+
+  &--refuse {
+    padding-top: 7px;
+
+    img {
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    .guarantee__desc {
+      width: 321px;
+    }
+  }
+
+  &--refund {
+    .guarantee__desc {
+      width: 351px;
+    }
+  }
+
+  &--cards {
+    padding-top: 13px;
+
+    img {
+      display: block;
+      margin: 0 auto 17px auto;
+    }
+
+    .guarantee__desc {
+      width: 419px;
+    }
+  }
+
+  &--service {
+    img {
+      display: block;
+      margin: 0 auto 12px auto;
+    }
+
+    .guarantee__desc {
+      width: 484px;
+    }
+  }
+}
+
+.guarantee__desc {
+  margin: 0;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  background: $blackGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
